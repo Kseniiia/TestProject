@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="0" runstate="Runnable" testcasecount="1" result="Passed" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.13.0.0" clr-version="3.1.22" start-time="2021-12-23 13:01:53Z" end-time="2021-12-23 13:01:53Z" duration="0.155510">
+  <command-line><![CDATA[C:\Users\Kseniya_Malchykava\Documents\netcoreapp3.1\nunit3-console.dll C:\Users\Kseniya_Malchykava\source\repos\TestProject2\TestProject2\bin\Debug\netcoreapp3.1\TestProject2.dll]]></command-line>
+  <test-suite type="Assembly" id="1-1002" name="TestProject2.dll" fullname="C:/Users/Kseniya_Malchykava/source/repos/TestProject2/TestProject2/bin/Debug/netcoreapp3.1/TestProject2.dll" runstate="Runnable" testcasecount="1" result="Passed" start-time="2021-12-23T13:01:53.9466756Z" end-time="2021-12-23T13:01:53.9839875Z" duration="0.037237" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+    <environment framework-version="3.13.2.0" clr-version="3.1.22" os-version="Microsoft Windows 10.0.19043" platform="Win32NT" cwd="C:\Users\Kseniya_Malchykava\Documents\netcoreapp3.1" machine-name="EPBYMINW01AB" user="Kseniya_Malchykava" user-domain="MINSK" culture="en-US" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\Kseniya_Malchykava\Documents\netcoreapp3.1" />
+      <setting name="NumberOfTestWorkers" value="8" />
+    </settings>
+    <properties>
+      <property name="_PID" value="5304" />
+      <property name="_APPDOMAIN" value="nunit3-console" />
+    </properties>
+    <test-suite type="TestSuite" id="1-1003" name="TestProject2" fullname="TestProject2" runstate="Runnable" testcasecount="1" result="Passed" start-time="2021-12-23T13:01:53.9514400Z" end-time="2021-12-23T13:01:53.9839712Z" duration="0.032528" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestFixture" id="1-1000" name="Tests" fullname="TestProject2.Tests" classname="TestProject2.Tests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2021-12-23T13:01:53.9528266Z" end-time="2021-12-23T13:01:53.9836417Z" duration="0.030817" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <test-case id="1-1001" name="Test1" fullname="TestProject2.Tests.Test1" methodname="Test1" classname="TestProject2.Tests" runstate="Runnable" seed="1666629702" result="Passed" start-time="2021-12-23T13:01:53.9548027Z" end-time="2021-12-23T13:01:53.9809610Z" duration="0.026244" asserts="0" />
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
