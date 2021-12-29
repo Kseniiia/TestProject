@@ -8,8 +8,8 @@ Write-Output "Run tests"
 & 'C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\msbuild' TestProject2\TestProject2.sln "/t:Clean,Build" "/p:Configuration=Release"
 
 # Enable Report Portal Nunit plugin
-echo ../../../TestProject2/bin/Debug/netcoreapp3.1/ReportPortal.NUnitExtension.dll > .\nunit\ReportPortal.addins
-echo ../../../TestProject2/bin/Debug/netcoreapp3.1/TestProject2.dll > .\nunit\ReportPortalCustomization.addins
+echo C:\TestProject\TestProject2\bin\Debug\netcoreapp3.1\ReportPortal.NUnitExtension.dll > .\nunit\ReportPortal.addins
+echo C:\TestProject\TestProject2\bin\Debug\netcoreapp3.1\TestProject2.dll > .\nunit\ReportPortalCustomization.addins
 
 # Run tests
 $launch_name ='TEST'
