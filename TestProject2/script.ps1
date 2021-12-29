@@ -9,4 +9,4 @@ Write-Output "Run tests"
 
 # Run tests
 
-dotnet test TestProject2\bin\Release\netcoreapp3.1\TestProject2.dll --logger ReportPortal
+dotnet test TestProject2\TestProject2\bin\Release\netcoreapp3.1\TestProject2.dll --logger ReportPortal
