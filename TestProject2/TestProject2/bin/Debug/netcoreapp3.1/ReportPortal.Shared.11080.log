@@ -1,0 +1,248 @@
+ExponentialRetryRequestExecuter Error: 0 : 16:32:18.5805460 : 1-testhost : Error while invoking '<Start>b__4' method. Current attempt: 0. Waiting 8 seconds and retrying it.
+System.Net.Http.HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+ExponentialRetryRequestExecuter Error: 0 : 16:32:47.6078021 : 1-testhost : Error while invoking '<Start>b__4' method. Current attempt: 1. Waiting 16 seconds and retrying it.
+System.Net.Http.HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+ExponentialRetryRequestExecuter Error: 0 : 16:33:24.6313454 : 1-testhost : Error while invoking '<Start>b__4' method. Current attempt: 2.
+System.Net.Http.HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+TestReporter Error: 0 : 16:33:24.6410888 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.)
+ ---> System.Net.Http.HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 16:33:24.6457221 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.)
+ ---> System.Net.Http.HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 16:33:24.6508841 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.)
+ ---> System.Net.Http.HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 16:33:24.6570908 : 1-testhost : System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.)
+ ---> System.Net.Http.HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 16:33:24.6700926 : 1-testhost : System.Exception: Cannot finish test item due starting item failed.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.)
+ ---> System.Net.Http.HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+TestReporter Error: 0 : 16:33:24.6755094 : 1-testhost : System.Exception: Cannot finish test item due starting item failed.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (Cannot start test item due parent failed to start.)
+ ---> System.Exception: Cannot start test item due parent failed to start.
+ ---> System.AggregateException: One or more errors occurred. (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.)
+ ---> System.Net.Http.HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at ReportPortal.Client.Resources.ServiceBaseResource.SendHttpRequestAsync[TResponse](HttpMethod httpMethod, String uri, HttpContent httpContent)
+   at ReportPortal.Shared.Internal.Delegating.BaseRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttemptCallback, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Internal.Delegating.ExponentialRetryRequestExecuter.ExecuteAsync[T](Func`1 func, Action`1 beforeNextAttempt, IStatisticsCounter statisticsCounter)
+   at ReportPortal.Shared.Reporter.LaunchReporter.<>c__DisplayClass25_0.<<Start>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at ReportPortal.Shared.Reporter.LaunchReporter.Sync()
+   at ReportPortal.NUnitExtension.ReportPortalListener.FinishRun(String report)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at ReportPortal.Shared.Reporter.TestReporter.<>c__DisplayClass24_0.<<Start>b__0>d.MoveNext()
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
