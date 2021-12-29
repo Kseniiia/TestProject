@@ -12,4 +12,3 @@ $launch_name ='TEST'
 $env:RP_LAUNCH_NAME = $launch_name
 $runner_path ='C:\TestProject\TestProject2\TestProject2\nunit\nunit3-console.exe'
 $testlibpath = '.\TestProject2\bin\Debug\netcoreapp3.1\TestProject2.dll'
-& $runner_path $testlibpath --where="(test =~ /TestProject2/) AND test !~ /Unauthorized/
