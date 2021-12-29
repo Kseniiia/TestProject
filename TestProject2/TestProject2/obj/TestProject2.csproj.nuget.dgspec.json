@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kseniya_Malchykava\\source\\repos\\TestProject2\\TestProject2\\TestProject2.csproj": {}
+    "C:\\TestProject\\TestProject2\\TestProject2\\TestProject2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kseniya_Malchykava\\source\\repos\\TestProject2\\TestProject2\\TestProject2.csproj": {
+    "C:\\TestProject\\TestProject2\\TestProject2\\TestProject2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kseniya_Malchykava\\source\\repos\\TestProject2\\TestProject2\\TestProject2.csproj",
+        "projectUniqueName": "C:\\TestProject\\TestProject2\\TestProject2\\TestProject2.csproj",
         "projectName": "TestProject2",
-        "projectPath": "C:\\Users\\Kseniya_Malchykava\\source\\repos\\TestProject2\\TestProject2\\TestProject2.csproj",
+        "projectPath": "C:\\TestProject\\TestProject2\\TestProject2\\TestProject2.csproj",
         "packagesPath": "C:\\Users\\Kseniya_Malchykava\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kseniya_Malchykava\\source\\repos\\TestProject2\\TestProject2\\obj\\",
+        "outputPath": "C:\\TestProject\\TestProject2\\TestProject2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kseniya_Malchykava\\AppData\\Roaming\\NuGet\\NuGet.Config",
