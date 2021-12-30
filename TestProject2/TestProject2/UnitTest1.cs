@@ -1,20 +1,27 @@
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using System;
 
 namespace TestProject2
 {
     public class Tests
     {
+        string chromeDriverDirectory = "C:\\temp\\2.37";
         IWebElement element;
-        WebDriver driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        ChromeDriver driver;
+        //WebDriver driver = new ChromeDriver();
+
         string url = "https://github.com/nunit/nunit-console/releases/tag/3.13";
 
         [SetUp]
         public void Setup()
         {
-            ChromeOptions options = new ChromeOptions();
+            driver = new ChromeDriver(chromeDriverDirectory, options, TimeSpan.FromMinutes(3));
+            driver.Manage().Timeouts().PageLoad.Add(System.TimeSpan.FromSeconds(30));
             options.AddArgument("no-sandbox");
+          
             driver.Navigate().GoToUrl(url);
         }
 
