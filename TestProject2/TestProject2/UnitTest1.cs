@@ -7,7 +7,7 @@ namespace TestProject2
 {
     public class Tests
     {
-        string chromeDriverDirectory = "C:\\temp\\2.37";
+        string chromeDriverDirectory = "C:\\TestProject\\TestProject2\\TestProject2\\bin\\Release\\netcoreapp3.1";
         IWebElement element;
         ChromeOptions options = new ChromeOptions();
         ChromeDriver driver;
