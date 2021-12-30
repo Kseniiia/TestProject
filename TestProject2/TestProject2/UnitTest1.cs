@@ -13,9 +13,6 @@ namespace TestProject2
         [SetUp]
         public void Setup()
         {
-            ChromeOptions options = new ChromeOptions();
-            options.AddArgument("no-sandbox");
-
             driver.Navigate().GoToUrl(url);
         }
 
